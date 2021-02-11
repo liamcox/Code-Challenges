@@ -37,6 +37,52 @@ function firstNonConsecutive(arr) {
         if (arr[i] + 1 !== arr[i + 1]) {
             return arr[i + 1];
         }
-        return "All numbers are in order!"
+        return "All numbers are in order!";
     }
+}
+
+// You get an array of numbers, return the sum of all of the positives ones.
+function positiveSum(arr) {
+    var total = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            total += arr[i];
+        }
+    }
+    return total;
+}
+
+// Very simple, given a number, find its opposite.
+function opposite(number) {
+    //your code here
+    //create the double for subtraction
+    let double = number * 2;
+    //subtract double from original input to get opposite
+    return number - double;
+}
+
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+function makeNegative(num) {
+    // Code?
+    //check if number is already negative
+    if (num < 0) {
+        return num;
+        //turn number negative
+    } else {
+        return num * -1;
+    }
+}
+
+// It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+function removeChar(str) {
+    //You got this!
+    // turn into an array
+    let array = str.split("");
+    // pop off first and last element
+    array.shift();
+    array.pop();
+    //turn back into a string
+    let newString = array.join("");
+
+    return newString;
 }

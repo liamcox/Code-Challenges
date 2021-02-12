@@ -86,3 +86,47 @@ function removeChar(str) {
 
     return newString;
 }
+
+// Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0
+var summation = function (num) {
+    // Code here
+    var total = 0;
+    for (let i = 1; i <= num; i++) {
+        total = total + i;
+    }
+    return total;
+};
+
+// Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+function boolToWord(bool) {
+    if (bool === true) {
+        return "Yes";
+    } else {
+        return "No";
+    }
+}
+
+// Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+function countSheeps(arrayOfSheep) {
+    // TODO May the force be with you
+    var count = 0;
+    for (let sheep of arrayOfSheep) {
+        if (sheep === true) {
+            count = count + 1;
+        }
+    }
+    return count;
+}
+
+// We need a function that can transform a number into a string.
+function numberToString(num) {
+    // Return a string of the number here!
+    return num.toString();
+}
+
+// Nathan loves cycling.
+// Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+// You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+function litres(time) {
+    return Math.floor(time / 2);
+}

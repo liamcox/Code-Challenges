@@ -150,3 +150,15 @@ function isDivisible(n, x, y) {
         return false;
     }
 }
+// In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+function highAndLow(numbers){
+    // ...
+    let numb = numbers.split(' ')
+  
+    //Turn array of strings into numbers
+    let arrayInt = numb.map(Number)
+    //sort array
+    let min = Math.min(arrayInt)
+    let max = Math.max(arrayInt)
+    console.log(min, max)
+  }
